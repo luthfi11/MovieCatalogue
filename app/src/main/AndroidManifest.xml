@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.luthfialfarisi.moviecatalogue">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.luthfialfarisi.moviecatalogue.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.luthfialfarisi.moviecatalogue.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MovieDetailActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".provider.MovieProvider"
+            android:authorities="com.luthfialfarisi.moviecatalogue"
+            android:exported="true"
+            android:readPermission="com.luthfialfarisi.moviecatalogue.READ_DATABASE"
+            android:writePermission="com.luthfialfarisi.moviecatalogue.WRITE_DATABASE" />
+
+        <receiver android:name=".widgets.FavoriteWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/favorite_widget_info" />
+        </receiver>
+
+        <receiver
+            android:name=".services.DailyReminderService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".services.ReleaseTodayReminderService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".services.FavoriteWidgetService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <activity android:name=".activities.SettingActivity"></activity>
+    </application>
+
+</manifest>

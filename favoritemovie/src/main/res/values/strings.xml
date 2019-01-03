@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Favorite Movie</string>
+    <string name="poster_desc">Movie Poster Description</string>
+    <string name="rincian">Detail</string>
+    <string name="bagikan">Share</string>
+    <string name="judul">Title</string>
+    <string name="tgl_rilis">Release Date</string>
+    <string name="keterangan">Movie Overview</string>
+    <string name="popularitas">Popularity</string>
+    <string name="pilihan">Option</string>
+    <string name="beranda">Home</string>
+    <string name="favorit">Favorite</string>
+    <string name="konfig">Change Language</string>
+    <string name="sedang_tayang">Now Playing</string>
+    <string name="akan_datang">Upcoming</string>
+    <string name="memuat">Loading, Please Wait ...</string>
+    <string name="data_favorit">No favorite movies have been added</string>
+    <string name="data_ditambahkan">Favorite Movie Added</string>
+    <string name="data_dihapus">Favorite Movie Deleted</string>
+    <string name="hapus">Delete</string>
+    <string name="pesan_hapus">Delete this movie from favorite list ?</string>
+    <string name="ya">Yes</string>
+    <string name="tidak">No</string>
+</resources>

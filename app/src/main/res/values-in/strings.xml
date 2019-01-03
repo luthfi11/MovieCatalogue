@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Katalog Film</string>
+    <string name="pencarian_film">Pencarian Film</string>
+    <string name="search_button">Tombol Cari</string>
+    <string name="poster_desc">Deskripsi Poster</string>
+    <string name="judul">Judul</string>
+    <string name="tgl_rilis">Tanggal Rilis</string>
+    <string name="keterangan">Keterangan Film</string>
+    <string name="popularitas">Popularitas</string>
+    <string name="pilihan">Pilihan</string>
+    <string name="beranda">Beranda</string>
+    <string name="favorit">Favorit</string>
+    <string name="film_favorit">Film Favorit</string>
+    <string name="konfig">Pengaturan</string>
+    <string name="bahasa">Ganti Bahasa</string>
+    <string name="rincian">Rincian</string>
+    <string name="bagikan">Bagikan</string>
+    <string name="sedang_tayang">Sedang Tayang</string>
+    <string name="akan_datang">Akan Tayang</string>
+    <string name="memuat">Sedang Memuat, Mohon Tunggu ...</string>
+    <string name="data_favorit">Belum ada film favorit ditambahkan</string>
+    <string name="data_ditambahkan">Film Favorit Ditambahkan</string>
+    <string name="data_dihapus">Film Favorit Dihapus</string>
+    <string name="hapus">Hapus</string>
+    <string name="pesan_hapus">Hapus film ini dari daftar favorit ?</string>
+    <string name="ya">Ya</string>
+    <string name="tidak">Tidak</string>
+    <string name="notif_harian">Pengingat Harian</string>
+    <string name="notif_upcoming">Pengingat Rilis Film</string>
+    <string name="notif_msg">Katalog Film merindukan anda ...</string>
+    <string name="notif_msg_rilis">Hari Ini %s Rilis</string>
+
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Katalog Film</string>
+    <string name="nav_header_subtitle">luthfialfarizi98@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="title_activity_home">Katalog Film</string>
+
+</resources>

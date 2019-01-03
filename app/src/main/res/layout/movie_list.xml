@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/rvItem">
+
+    <ImageView
+        android:id="@+id/posterMovie"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/poster_desc"
+        tools:src="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="5dp">
+
+        <TextView
+            android:id="@+id/txtJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/judul"
+            android:textSize="18sp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:maxLength="25"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/txtKeterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/keterangan"
+            android:maxLength="30"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/txtRilis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tgl_rilis"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorBlack"/>
+
+    </LinearLayout>
+</LinearLayout>

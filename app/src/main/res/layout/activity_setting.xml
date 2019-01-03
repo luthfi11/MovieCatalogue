@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="12dp">
+
+        <Switch
+            android:id="@+id/switch_daily_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notif_harian"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/switch_release_today"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/notif_upcoming"
+            android:textSize="16sp" />
+
+        <View
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/tv_change_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bahasa"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

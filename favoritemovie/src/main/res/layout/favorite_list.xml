@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/img_poster"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            tools:src="@color/colorPrimary"
+            android:contentDescription="@string/poster_desc"/>
+
+        <TextView
+            android:layout_toEndOf="@id/img_poster"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="JUDUL FILM"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:maxLength="50"/>
+
+        <TextView
+            android:layout_below="@id/tv_title"
+            android:layout_toEndOf="@id/img_poster"
+            android:id="@+id/tv_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Keterangan"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:maxLength="150" />
+
+        <TextView
+            android:layout_below="@id/tv_overview"
+            android:layout_toEndOf="@id/img_poster"
+            android:id="@+id/tv_release"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Tanggal Rilis"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

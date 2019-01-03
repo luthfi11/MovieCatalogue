@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp" >
+
+        <ImageView
+            android:id="@+id/posterGrid"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            tools:src="@color/colorPrimary"
+            android:contentDescription="@string/poster_desc"/>
+
+        <TextView
+            android:layout_toEndOf="@id/posterGrid"
+            android:id="@+id/lblJudulGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="JUDUL FILM"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:maxLength="30"/>
+
+        <TextView
+            android:layout_below="@id/lblJudulGrid"
+            android:layout_toEndOf="@id/posterGrid"
+            android:id="@+id/lblKeteranganGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Keterangan"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:maxLength="50" />
+
+        <TextView
+            android:layout_below="@id/lblKeteranganGrid"
+            android:layout_toEndOf="@id/posterGrid"
+            android:id="@+id/lblTanggalRilisGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Tanggal Rilis"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/lblTanggalRilisGrid"
+            android:layout_toEndOf="@id/posterGrid"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btnDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/rincian"
+                style="@style/Base.Widget.AppCompat.Button.Colored"/>
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/bagikan"
+                style="@style/Base.Widget.AppCompat.Button.Colored"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
